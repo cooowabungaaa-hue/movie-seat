@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Dictionary - 映画館座席検索</title>
+    <link rel="manifest" href="manifest.json">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+    <style>
+        :root {
+            --primary: #e50914;
+            /* Netflixのような赤、または映画館の赤 */
+            --dark-bg: #141414;
+            --card-bg: #1f1f1f;
+            --text-main: #ffffff;
+            --text-sub: #b3b3b3;
+            --accent: #f5c518;
+            /* 星評価用の黄色 */
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        .seat-title,
+        .rating,
+        button,
+        .subtitle,
+        label,
+        select,
+        input {
+            font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        /* 検索フォーム */
+        .search-box {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--text-sub);
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .seat-input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #bf0710;
+        }
+
+        /* 結果表示エリア */
+        #result-area {
+            margin-top: 30px;
+            display: none;
+            /* 初期状態は非表示 */
+        }
+
+        .result-card {
+            background-color: var(--card-bg);
+            border-left: 5px solid var(--accent);
+            padding: 20px;
+            border-radius: 4px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .seat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .seat-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .rating {
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        .comment-section h3 {
+            font-size: 1rem;
+            color: var(--text-sub);
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-msg {
+            color: #ff6b6b;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Seat Dictionary</h1>
+            <p class="subtitle">あの映画館の、あの席の正解を知る。</p>
+        </header>
+
+        <div class="search-box">
+            <div class="form-group">
+                <label>映画館を選択</label>
+                <select id="theater-select">
+                    <option value="">選択してください</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>スクリーン</label>
+                <select id="screen-select" disabled>
+                    <option value="">映画館を先に選んでください</option>
+                </select>
+
+            </div>
+
+
+
+            <div id="result-area">
+                <div class="result-card">
+                    <div class="seat-header">
+                        <div class="seat-title" id="res-seat-id">F-12</div>
+                        <div class="rating">★ <span id="res-score">4.5</span></div>
+                    </div>
+                    <div class="tags" id="res-tags">
+                    </div>
+                    <div class="comment-section">
+                        <h3>レビュー・特徴</h3>
+                        <p class="comment-text" id="res-comment">
+                            ここにコメントが入ります。
+                        </p>
+                    </div>
+                    <div id="seat-map-container" style="display:none; margin-top:20px; text-align:center;">
+                        <h3 style="font-size:1rem; color:#b3b3b3; margin-bottom:10px;">座席表</h3>
+                        <img id="seat-map-img" src="" alt="座席表"
+                            style="max-width:100%; border-radius:4px; border:1px solid #555;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- データを読み込む -->
+        <script src="data.js"></script>
+
+        <script>
+            // --- 1. 初期化とイベントリスナー ---
+            const theaterSelect = document.getElementById('theater-select');
+            const screenSelect = document.getElementById('screen-select');
+
+
+            // 映画館リストの生成 (CINEMA_DBを使用)
+            // CINEMA_DBが存在しない場合のガードなし（data.js依存）
+            if (typeof CINEMA_DB !== 'undefined') {
+                for (let key in CINEMA_DB) {
+                    let option = document.createElement('option');
+                    option.value = key;
+                    option.text = CINEMA_DB[key].name;
+                    theaterSelect.appendChild(option);
+                }
+            } else {
+                console.error("CINEMA_DB is not defined. data.js might be missing.");
+                alert("データの読み込みに失敗しました。");
+            }
+
+
+
+            // 映画館変更時の処理
+            theaterSelect.addEventListener('change', function () {
+                const theaterKey = this.value;
+                screenSelect.innerHTML = '<option value="">スクリーンを選択</option>';
+                document.getElementById('result-area').style.display = 'none'; // リセット
+
+                if (theaterKey && CINEMA_DB[theaterKey]) {
+                    screenSelect.disabled = false;
+                    const screens = CINEMA_DB[theaterKey].screens;
+                    for (let sKey in screens) {
+                        let option = document.createElement('option');
+                        option.value = sKey;
+                        option.text = screens[sKey].name;
+                        screenSelect.appendChild(option);
+                    }
+                } else {
+                    screenSelect.disabled = true;
+                }
+            });
+
+            // スクリーン変更時の処理
+            screenSelect.addEventListener('change', function () {
+                const theaterKey = theaterSelect.value;
+                const screenKey = this.value;
+                const resultArea = document.getElementById('result-area');
+
+                // 簡易情報表示用divは削除済みの前提または今回削除
+
+                if (theaterKey && screenKey && CINEMA_DB[theaterKey]) {
+                    const theater = CINEMA_DB[theaterKey];
+                    const screen = theater.screens[screenKey];
+
+                    if (screen) {
+                        // スペック情報
+                        const size = (screen.size && screen.size !== "[n/a]") ? screen.size : "不明";
+                        const cap = (screen.capacity && screen.capacity !== "[n/a]") ? screen.capacity : "不明";
+                        const audio = screen.note || "通常";
+
+                        // 推奨席情報
+                        const recRowRaw = screen.rec_row || "不明";
+                        const recNumRaw = screen.rec_num || "不明";
+
+                        // 表示更新
+                        const theaterInfo = `${theater.name} / ${screen.name}`;
+                        const specs = `サイズ: ${size} / キャパ: ${cap}`;
+
+                        // ID表示部分に推奨席を表示
+                        document.getElementById('res-seat-id').innerHTML = `
+                        <span style="font-size:1rem; color:#aaa;">推奨エリア</span><br>
+                        ${recRowRaw} / ${recNumRaw}
+                    `;
+
+                        // コメント生成（スクリーン特性に基づく）
+                        let evalComment = "";
+                        const note = (screen.note || "").toLowerCase();
+
+                        // 特殊上映方式の判定ロジック
+                        if (note.includes("imax")) {
+                            evalComment = "視界いっぱいの巨大スクリーンと、高精細な映像、迫力のサウンドが特徴です。\n没入感を最優先に設計されたシアターです。";
+                        } else if (note.includes("4dx")) {
+                            evalComment = "座席が動き、風や水、香りなどの特殊効果が連動する体感型アトラクションシアターです。\n映画の世界に入り込んだような体験が可能です。";
+                        } else if (note.includes("bestia")) {
+                            evalComment = "最新鋭のレーザープロジェクションと3D音響システムにより、リアルで鮮明な映像と音響を楽しめます。\n黒の表現が豊かで、没入感が高いです。";
+                        } else if (note.includes("dolby atmos")) {
+                            evalComment = "天井を含む全方位から音が降り注ぎ、立体的で移動する音響体験を提供します。\n音が自分の周りを動き回るような感覚を味わえます。";
+                        } else if (note.includes("tcx")) {
+                            evalComment = "壁一面に広がる左右いっぱいの巨大スクリーンで、迫力ある映像体験が可能です。\nそのスケール感に圧倒されます。";
+                        } else if (note.includes("轟音")) {
+                            evalComment = "重低音を強化したサウンドシステムにより、身体に響くような音響体験を楽しめます。\nアクション映画やライブ映像などに最適です。";
+                        } else if (note.includes("screenx")) {
+                            evalComment = "正面と左右の壁面、計3面に映像が投影され、視野角270度の没入感を体験できます。";
+                        } else {
+                            evalComment = "スクリーンサイズや音響設備に合わせて最適化された、バランスの良い鑑賞環境です。\n快適に映画を楽しめるよう設計されています。";
+                        }
+
+                        document.getElementById('res-comment').innerHTML = `
+                        ${evalComment.replace(/\n/g, '<br>')}<br><br>
+                        <div style="background:#333; padding:10px; border-radius:4px; font-size:0.9rem; margin-top:10px;">
+                            <strong>スクリーン情報</strong><br>
+                            ${specs}<br>
+                            音響/設備: ${audio}
+                        </div>
+                    `;
+
+                        // タグ生成
+                        const tags = ["ベストポジション", "推奨席", "没入感"];
+                        if (screen.tags && screen.tags.length > 0) {
+                            tags.push(...screen.tags);
+                        }
+
+                        const tagsContainer = document.getElementById('res-tags');
+                        tagsContainer.innerHTML = '';
+                        tags.forEach(tag => {
+                            let span = document.createElement('span');
+                            span.className = 'tag';
+                            span.textContent = tag;
+                            tagsContainer.appendChild(span);
+                        });
+
+                        // 座席表画像の表示制御
+                        const mapContainer = document.getElementById('seat-map-container');
+                        const mapImg = document.getElementById('seat-map-img');
+
+                        if (screen.seat_map_url) {
+                            mapImg.src = screen.seat_map_url;
+                            mapContainer.style.display = 'block';
+                        } else {
+                            mapContainer.style.display = 'none';
+                            mapImg.src = "";
+                        }
+
+                        resultArea.style.display = 'block';
+                    } else {
+                        resultArea.style.display = 'none';
+                    }
+                } else {
+                    resultArea.style.display = 'none';
+                }
+            });
+        </script>
+
+</body>
+
+</html>
