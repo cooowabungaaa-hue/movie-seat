@@ -225,6 +225,13 @@
 
         <div class="search-box">
             <div class="form-group">
+                <label>エリアで絞り込む</label>
+                <select id="area-select">
+                    <option value="">すべてのエリア</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label>映画館を選択</label>
                 <select id="theater-select">
                     <option value="">選択してください</option>
@@ -269,23 +276,56 @@
 
         <script>
             // --- 1. 初期化とイベントリスナー ---
+            const areaSelect = document.getElementById('area-select');
             const theaterSelect = document.getElementById('theater-select');
             const screenSelect = document.getElementById('screen-select');
 
-
-            // 映画館リストの生成 (CINEMA_DBを使用)
-            // CINEMA_DBが存在しない場合のガードなし（data.js依存）
+            // データの読み込みと初期化
             if (typeof CINEMA_DB !== 'undefined') {
+                // ユニークなエリアを抽出
+                const areas = new Set();
                 for (let key in CINEMA_DB) {
-                    let option = document.createElement('option');
-                    option.value = key;
-                    option.text = CINEMA_DB[key].name;
-                    theaterSelect.appendChild(option);
+                    if (CINEMA_DB[key].area) {
+                        areas.add(CINEMA_DB[key].area);
+                    }
                 }
+
+                // エリア選択肢の追加
+                Array.from(areas).sort().forEach(area => {
+                    let option = document.createElement('option');
+                    option.value = area;
+                    option.text = area;
+                    areaSelect.appendChild(option);
+                });
+
+                // 初期映画館リストの追加（全件）
+                populateTheaters();
             } else {
                 console.error("CINEMA_DB is not defined. data.js might be missing.");
                 alert("データの読み込みに失敗しました。");
             }
+
+            // 映画館リストを更新する関数
+            function populateTheaters(filterArea = "") {
+                theaterSelect.innerHTML = '<option value="">選択してください</option>';
+                screenSelect.innerHTML = '<option value="">映画館を先に選んでください</option>';
+                screenSelect.disabled = true;
+                document.getElementById('result-area').style.display = 'none';
+
+                for (let key in CINEMA_DB) {
+                    if (!filterArea || CINEMA_DB[key].area === filterArea) {
+                        let option = document.createElement('option');
+                        option.value = key;
+                        option.text = CINEMA_DB[key].name;
+                        theaterSelect.appendChild(option);
+                    }
+                }
+            }
+
+            // エリア変更時の処理
+            areaSelect.addEventListener('change', function () {
+                populateTheaters(this.value);
+            });
 
 
 

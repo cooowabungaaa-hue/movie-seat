@@ -1,6 +1,7 @@
 const CINEMA_DB = {
     "C0001": {
         "name": "グランドシネマサンシャイン池袋",
+        "area": "池袋",
         "screens": {
             "C0001-01": {
                 "name": "シアター1",
@@ -255,6 +256,7 @@ const CINEMA_DB = {
     },
     "C0002": {
         "name": "TOHOシネマズ池袋",
+        "area": "池袋",
         "screens": {
             "C0002-01": {
                 "name": "スクリーン1",
@@ -452,6 +454,7 @@ const CINEMA_DB = {
     },
     "C0003": {
         "name": "新宿ピカデリー",
+        "area": "新宿",
         "screens": {
             "C0003-01": {
                 "name": "スクリーン1 (プラチナ)",
@@ -628,6 +631,7 @@ const CINEMA_DB = {
     },
     "C0004": {
         "name": "新宿バルト9",
+        "area": "新宿",
         "screens": {
             "C0004-01": {
                 "name": "シアター1",
@@ -777,6 +781,7 @@ const CINEMA_DB = {
     },
     "C0005": {
         "name": "TOHOシネマズ新宿",
+        "area": "新宿",
         "screens": {
             "screen1": {
                 "name": "スクリーン1",
@@ -979,6 +984,7 @@ const CINEMA_DB = {
     },
     "C0006": {
         "name": "109シネマズプレミアム新宿",
+        "area": "新宿",
         "screens": {
             "theater1": {
                 "name": "シアター1",
@@ -1116,6 +1122,7 @@ const CINEMA_DB = {
     },
     "C0007": {
         "name": "TOHOシネマズ日比谷",
+        "area": "日比谷",
         "screens": {
             "screen1_tcx": {
                 "name": "スクリーン1 (TCX)",
@@ -1240,6 +1247,7 @@ const CINEMA_DB = {
     },
     "C0008": {
         "name": "丸の内ピカデリー",
+        "area": "有楽町",
         "screens": {
             "piccadilly1": {
                 "name": "ピカデリー1",
@@ -1293,6 +1301,7 @@ const CINEMA_DB = {
     },
     "C0009": {
         "name": "TOHOシネマズ六本木ヒルズ",
+        "area": "六本木",
         "screens": {
             "screen7_tcx": {
                 "name": "スクリーン7 (TCX)",
@@ -1333,6 +1342,7 @@ const CINEMA_DB = {
     },
     "C0011": {
         "name": "ユナイテッド・シネマ豊洲",
+        "area": "豊洲",
         "screens": {
             "screen7_4dx": {
                 "name": "スクリーン7 (4DX)",
@@ -1372,6 +1382,7 @@ const CINEMA_DB = {
     },
     "C0012": {
         "name": "109シネマズ二子玉川",
+        "area": "二子玉川",
         "screens": {
             "theater3": {
                 "name": "シアター3",
@@ -1443,6 +1454,7 @@ const CINEMA_DB = {
     },
     "C0013": {
         "name": "T・ジョイPRINCE品川",
+        "area": "品川",
         "screens": {
             "theater10": {
                 "name": "シアター10",
@@ -1482,6 +1494,7 @@ const CINEMA_DB = {
     },
     "C0014": {
         "name": "TOHOシネマズ日本橋",
+        "area": "日本橋",
         "screens": {
             "screen8_tcx": {
                 "name": "スクリーン8 (TCX)",
@@ -1506,6 +1519,7 @@ const CINEMA_DB = {
     },
     "C0021": {
         "name": "ヒューマントラストシネマ渋谷",
+        "area": "渋谷",
         "screens": {
             "theater1_odessa": {
                 "name": "シアター1 (Odessa)",
@@ -1527,6 +1541,7 @@ const CINEMA_DB = {
     },
     "C0031": {
         "name": "シネマ・ロサ",
+        "area": "池袋",
         "screens": {
             "rosa1": {
                 "name": "シネマ・ロサ1",
@@ -1564,6 +1579,7 @@ const CINEMA_DB = {
     },
     "C0032": {
         "name": "YEBISU GARDEN CINEMA",
+        "area": "恵比寿",
         "screens": {
             "cinema1": {
                 "name": "シネマ1",
@@ -1601,6 +1617,7 @@ const CINEMA_DB = {
     },
     "C0039": {
         "name": "吉祥寺オデヲン",
+        "area": "吉祥寺",
         "screens": {
             "odeon": {
                 "name": "オデヲン",
@@ -1622,6 +1639,7 @@ const CINEMA_DB = {
     },
     "C0040": {
         "name": "シネマシティ",
+        "area": "立川",
         "screens": {
             "studio_a": {
                 "name": "aスタジオ (極音)",

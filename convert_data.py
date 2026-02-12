@@ -57,6 +57,7 @@ def main():
                 if theater_id not in db:
                     db[theater_id] = {
                         "name": theater_name,
+                        "area": row[1],
                         "screens": {}
                     }
                 
