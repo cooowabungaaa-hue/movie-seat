@@ -38,8 +38,6 @@ def main():
             reader = csv.reader(f)
             header = next(reader) # Skip header
             
-            seen_screens = set()
-            
             for row in reader:
                 if not row or len(row) < 5:
                     continue
@@ -48,13 +46,6 @@ def main():
                 theater_name = row[3]
                 screen_id = row[4]
                 screen_name = row[5]
-                
-                # Dedup based on composite key (TheaterID + ScreenID)
-                # to prevent collisions between theaters using generic IDs like 'screen1'
-                composite_key = f"{theater_id}_{screen_id}"
-                if composite_key in seen_screens:
-                    continue
-                seen_screens.add(composite_key)
                 
                 if theater_id not in db:
                     db[theater_id] = {
@@ -109,7 +100,9 @@ def main():
             json.dump(db, f, indent=4, ensure_ascii=False)
             f.write(';')
             
-        print(f"Successfully converted {len(seen_screens)} screens to data.js")
+        # Count total screens across all theaters
+        total_screens = sum(len(theater["screens"]) for theater in db.values())
+        print(f"Successfully converted {total_screens} screens to data.js")
         
     except Exception as e:
         print(f"Error: {e}")
