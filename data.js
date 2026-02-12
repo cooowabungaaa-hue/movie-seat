@@ -928,7 +928,18 @@ const CINEMA_DB = {
                     "Dolby Atmos",
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "プレミアラグジュアリーシート",
+                        "note": "＋3,000円 / 電動リクライニング・フットレスト(革製)"
+                    },
+                    {
+                        "row": "A列",
+                        "name": "フロントリクライニングシート",
+                        "note": "最前列 / リクライニング可(通常料金)"
+                    }
+                ]
             },
             "screen10_imax": {
                 "name": "スクリーン10 (IMAX)",
@@ -1000,7 +1011,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater2": {
                 "name": "シアター2",
@@ -1016,7 +1038,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater3_atmos": {
                 "name": "シアター3 (Dolby Atmos)",
@@ -1034,7 +1067,18 @@ const CINEMA_DB = {
                 "tags": [
                     "Dolby Atmos"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "F列、G列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜E列、H列〜J列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater4": {
                 "name": "シアター4",
@@ -1050,7 +1094,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater5": {
                 "name": "シアター5",
@@ -1066,7 +1121,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater6_screenx": {
                 "name": "シアター6 (ScreenX)",
@@ -1084,7 +1150,18 @@ const CINEMA_DB = {
                 "tags": [
                     "ScreenX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列、I列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列、J列〜K列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater7": {
                 "name": "シアター7",
@@ -1100,7 +1177,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             },
             "theater8": {
                 "name": "シアター8",
@@ -1116,7 +1204,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "CLASS S",
+                        "note": "＋2,000円(通常比) / 全席プレミアム・電動リクライニング・ラウンジ使用権"
+                    },
+                    {
+                        "row": "A列〜G列",
+                        "name": "CLASS A",
+                        "note": "＋0円(通常比) / 全席プレミアム・リクライニング"
+                    }
+                ]
             }
         }
     },
@@ -1140,7 +1239,18 @@ const CINEMA_DB = {
                 "tags": [
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "L列",
+                        "name": "プレミアラグジュアリーシート",
+                        "note": "＋3,000円 / 電動リクライニング・フットレスト(革製)"
+                    },
+                    {
+                        "row": "K列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
+                ]
             },
             "screen2": {
                 "name": "スクリーン2",
@@ -1209,7 +1319,13 @@ const CINEMA_DB = {
                     "Dolby Atmos",
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
+                ]
             },
             "screen6": {
                 "name": "スクリーン6",
@@ -1273,7 +1389,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "I列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
+                ]
             },
             "screen10": {
                 "name": "スクリーン10",
@@ -1413,7 +1535,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen2": {
                 "name": "スクリーン2",
@@ -1429,7 +1557,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "N列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen3": {
                 "name": "スクリーン3",
@@ -1445,7 +1579,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen4": {
                 "name": "スクリーン4",
@@ -1461,7 +1601,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "F列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen5": {
                 "name": "スクリーン5",
@@ -1477,7 +1623,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen6": {
                 "name": "スクリーン6",
@@ -1493,7 +1645,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen7_tcx": {
                 "name": "スクリーン7 (TCX)",
@@ -1512,7 +1670,23 @@ const CINEMA_DB = {
                     "Dolby Atmos",
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアラグジュアリーシート",
+                        "note": "＋3,000円 / 電動リクライニング・フットレスト(革製)"
+                    },
+                    {
+                        "row": "E列、F列、H列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    },
+                    {
+                        "row": "A列",
+                        "name": "フロントリクライニングシート",
+                        "note": "最前列 / リクライニング可(通常料金)"
+                    }
+                ]
             },
             "screen8_mx4d": {
                 "name": "スクリーン8 (MX4D)",
@@ -1544,7 +1718,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             }
         }
     },
@@ -1668,7 +1848,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列、I列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen2": {
                 "name": "スクリーン2",
@@ -1684,7 +1870,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen3": {
                 "name": "スクリーン3",
@@ -1700,7 +1892,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen4": {
                 "name": "スクリーン4",
@@ -1716,7 +1914,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen5": {
                 "name": "スクリーン5",
@@ -1732,7 +1936,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "I列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen6": {
                 "name": "スクリーン6",
@@ -1748,7 +1958,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "I列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen7_4dx": {
                 "name": "スクリーン7 (4DX)",
@@ -1782,7 +1998,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen9": {
                 "name": "スクリーン9",
@@ -1798,7 +2020,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen10_ocean": {
                 "name": "スクリーン10 (OCEAN)",
@@ -1814,7 +2042,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "M列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen11": {
                 "name": "スクリーン11",
@@ -1830,7 +2064,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             },
             "screen12": {
                 "name": "スクリーン12",
@@ -1846,7 +2086,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミア・ペアシート",
+                        "note": "平日￥5,500 休日￥6,500/ 2名掛けソファ・専用ラウンジ利用（ワンドリンク付き）"
+                    }
+                ]
             }
         }
     },
@@ -1868,7 +2114,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater2": {
                 "name": "シアター2",
@@ -1884,7 +2136,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater3": {
                 "name": "シアター3",
@@ -1900,7 +2158,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater4": {
                 "name": "シアター4",
@@ -1916,7 +2180,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "F列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater5": {
                 "name": "シアター5",
@@ -1932,7 +2202,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "D列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater6": {
                 "name": "シアター6",
@@ -1948,7 +2224,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "D列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater7": {
                 "name": "シアター7",
@@ -1964,7 +2246,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "L列、M列",
+                        "name": "グランド・エグゼクティブシート",
+                        "note": "＋3,000円 / 電動リクライニング・専用ハンガー・ラウンジ利用"
+                    },
+                    {
+                        "row": "H列、I列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater8": {
                 "name": "シアター8",
@@ -1980,7 +2273,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "D列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater9": {
                 "name": "シアター9",
@@ -1996,7 +2295,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "F列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    }
+                ]
             },
             "theater10_imax": {
                 "name": "シアター10 (IMAX)",
@@ -2014,7 +2319,18 @@ const CINEMA_DB = {
                 "tags": [
                     "IMAX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列",
+                        "name": "エグゼクティブシート",
+                        "note": "会員無料(通常＋0円) / リクライニング・専用テーブル"
+                    },
+                    {
+                        "row": "G列",
+                        "name": "グランド・エグゼクティブシート",
+                        "note": "＋3,000円 / 電動リクライニング・専用ハンガー・ラウンジ利用"
+                    }
+                ]
             }
         }
     },
@@ -2036,7 +2352,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミアシート",
+                        "note": "＋1,000円 / セミプライベート空間\n座席を一席ずつに区切った特別な革張のシート"
+                    },
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater2": {
                 "name": "シアター2",
@@ -2052,7 +2379,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater3": {
                 "name": "シアター3",
@@ -2068,7 +2401,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater4": {
                 "name": "シアター4",
@@ -2084,7 +2423,18 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアシート",
+                        "note": "＋1,000円 / セミプライベート空間\n座席を一席ずつに区切った特別な革張のシート"
+                    },
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater5": {
                 "name": "シアター5",
@@ -2100,7 +2450,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater6": {
                 "name": "シアター6",
@@ -2116,7 +2472,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater7": {
                 "name": "シアター7",
@@ -2132,7 +2494,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater8": {
                 "name": "シアター8",
@@ -2148,7 +2516,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater9": {
                 "name": "シアター9",
@@ -2164,7 +2538,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater10": {
                 "name": "シアター10",
@@ -2180,7 +2560,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             },
             "theater11_imax": {
                 "name": "シアター11 (IMAX)",
@@ -2198,7 +2584,18 @@ const CINEMA_DB = {
                 "tags": [
                     "IMAX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "M列",
+                        "name": "プレミアシート",
+                        "note": "＋1,000円 / セミプライベート空間\n座席を一席ずつに区切った特別な革張のシート"
+                    },
+                    {
+                        "row": "N列",
+                        "name": "ペアシート",
+                        "note": "＋0円(通常比)　1席ずつの販売"
+                    }
+                ]
             }
         }
     },
@@ -2318,7 +2715,13 @@ const CINEMA_DB = {
                 "tags": [
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "H列、I列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen8_tcx": {
                 "name": "スクリーン8 (TCX)",
@@ -2337,7 +2740,13 @@ const CINEMA_DB = {
                     "Dolby Atmos",
                     "TCX"
                 ],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "G列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間"
+                    }
+                ]
             },
             "screen9": {
                 "name": "スクリーン9",
@@ -2891,7 +3300,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "I列、M列",
+                        "name": "ペアシート",
+                        "note": "追加料金なし、2席同時購入に限る"
+                    }
+                ]
             }
         }
     },
@@ -3443,7 +3858,13 @@ const CINEMA_DB = {
                 "master_rec": "",
                 "master_rec_note": "",
                 "tags": [],
-                "special_seats": []
+                "special_seats": [
+                    {
+                        "row": "B列、C列",
+                        "name": "プラチナ・プレミアムシート",
+                        "note": "＋700円 / 電動リクライニング・フットレスト・テーブル"
+                    }
+                ]
             }
         }
     }

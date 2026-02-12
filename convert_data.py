@@ -8,8 +8,9 @@ def main():
     csv_file = 'data.csv'
     special_seats_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS7o4i_KeQ4H_yxJ0_mx3gPo7ueIjihSscCxLJhe39BhBth4jx4zf5-SVsxEdNvmS8-zFhaaa66lAGE/pub?gid=1324007564&single=true&output=csv'
     
+    special_seats_by_id = {}
+    special_seats_by_name = {}
     db = {}
-    special_seats_map = {}
 
     try:
         # 1. Fetch Special Seats Data
@@ -22,16 +23,27 @@ def main():
             for row in reader:
                 if not row or len(row) < 6:
                     continue
-                # TheaterID, TheaterName, ScreenID, ScreenName, Row, SeatName, Note
-                screen_id = row[2]
+                # TheaterID, TheaterName, ScreenID (Canonical), ScreenName, Row, SeatName, Note
+                theater_id = row[0]
+                screen_id_canonical = row[2]
+                screen_name = row[3]
+                
                 seat_info = {
                     "row": row[4],
                     "name": row[5],
                     "note": row[6]
                 }
-                if screen_id not in special_seats_map:
-                    special_seats_map[screen_id] = []
-                special_seats_map[screen_id].append(seat_info)
+                
+                # Store by ID
+                if screen_id_canonical not in special_seats_by_id:
+                    special_seats_by_id[screen_id_canonical] = []
+                special_seats_by_id[screen_id_canonical].append(seat_info)
+                
+                # Also store by TheaterID + Name as fallback
+                name_key = f"{theater_id}_{screen_name}"
+                if name_key not in special_seats_by_name:
+                    special_seats_by_name[name_key] = []
+                special_seats_by_name[name_key].append(seat_info)
         
         # 2. Process main data.csv
         with open(csv_file, 'r', encoding='utf-8') as f:
@@ -58,6 +70,13 @@ def main():
                 def get_col(idx):
                     return row[idx] if idx < len(row) else ""
 
+                # Robust mapping: Try ID match first, then Name fallback
+                special_seats = special_seats_by_id.get(screen_id, [])
+                match_type = "ID"
+                if not special_seats:
+                    name_key = f"{theater_id}_{screen_name}"
+                    special_seats = special_seats_by_name.get(name_key, [])
+
                 screen_data = {
                     "name": screen_name,
                     "note": get_col(6),
@@ -72,7 +91,7 @@ def main():
                     "master_rec": get_col(15),
                     "master_rec_note": get_col(16),
                     "tags": [],
-                    "special_seats": special_seats_map.get(screen_id, [])
+                    "special_seats": special_seats
                 }
                 
                 # Add tags from notes or specs
@@ -106,6 +125,8 @@ def main():
         
     except Exception as e:
         print(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
 
 if __name__ == "__main__":
     main()
