@@ -366,15 +366,47 @@
 
                         document.getElementById('res-comment').innerHTML = `
                         ${evalComment.replace(/\n/g, '<br>')}<br><br>
+                        
+                        ${screen.master_rec ? `
+                        <div style="background:rgba(245, 197, 24, 0.1); border:1px solid var(--accent); padding:10px; border-radius:4px; font-size:0.9rem; margin-bottom:15px; color:var(--accent);">
+                            <strong>究極の推奨席 (Master Recommend)</strong><br>
+                            ${screen.master_rec} ${screen.master_rec_note ? `<br><span style="color:#ccc; font-size:0.8rem;">${screen.master_rec_note}</span>` : ""}
+                        </div>
+                        ` : ""}
+
+                        ${screen.special_seats && screen.special_seats.length > 0 ? `
+                        <div style="background:rgba(255, 255, 255, 0.05); border:1px solid #444; padding:12px; border-radius:8px; font-size:0.9rem; margin-bottom:15px;">
+                            <strong style="color:var(--accent); display:block; margin-bottom:8px; border-bottom:1px solid #444; padding-bottom:4px;">特別座席情報</strong>
+                            ${screen.special_seats.map((seat, index) => `
+                                <div style="margin-bottom:${index === screen.special_seats.length - 1 ? '0' : '10px'}; padding-bottom:${index === screen.special_seats.length - 1 ? '0' : '10px'}; border-bottom:${index === screen.special_seats.length - 1 ? 'none' : '1px dashed #444'};">
+                                    <span style="font-weight:700; color:#fff;">${seat.name}</span> <span style="font-size:0.8rem; color:#aaa;">(${seat.row})</span><br>
+                                    <span style="color:#eee; font-size:0.85rem;">${seat.note}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        ` : ""}
+
                         <div style="background:#333; padding:10px; border-radius:4px; font-size:0.9rem; margin-top:10px;">
                             <strong>スクリーン情報</strong><br>
-                            ${specs}<br>
+                            サイズ: ${size} ${screen.size_note ? `(${screen.size_note})` : ""}<br>
+                            キャパ: ${cap} ${screen.capacity_note ? `(${screen.capacity_note})` : ""}<br>
                             音響/設備: ${audio}
                         </div>
                     `;
 
+                        // 推奨エリアの備考表示
+                        const rowNote = screen.rec_row_note ? `<br><small style="font-weight:normal; color:#aaa;">${screen.rec_row_note}</small>` : "";
+                        const numNote = screen.rec_num_note ? `<br><small style="font-weight:normal; color:#aaa;">${screen.rec_num_note}</small>` : "";
+
+                        document.getElementById('res-seat-id').innerHTML = `
+                            <span style="font-size:1rem; color:#aaa;">推奨エリア</span><br>
+                            ${recRowRaw}${rowNote} / ${recNumRaw}${numNote}
+                        `;
                         // タグ生成
                         const tags = ["ベストポジション", "推奨席", "没入感"];
+                        if (screen.master_rec) {
+                            tags.unshift("究極の推奨席");
+                        }
                         if (screen.tags && screen.tags.length > 0) {
                             tags.push(...screen.tags);
                         }

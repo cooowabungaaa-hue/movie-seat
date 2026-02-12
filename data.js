@@ -6,113 +6,249 @@ const CINEMA_DB = {
                 "name": "シアター1",
                 "note": "通常",
                 "size": "7.1m × 3.8m",
+                "size_note": "",
                 "capacity": "79席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "seat_map_url": "https://placehold.co/600x400/333/fff?text=Seat+Map+Example",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-02": {
                 "name": "シアター2",
                 "note": "通常",
                 "size": "8.3m × 4.4m",
+                "size_note": "",
                 "capacity": "103席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-03": {
                 "name": "シアター3",
                 "note": "通常",
                 "size": "16.1m × 6.7m",
+                "size_note": "",
                 "capacity": "381席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-04": {
                 "name": "シアター4 (4DX SCREEN)",
                 "note": "4DX SCREEN",
                 "size": "13.6m × 5.8m",
+                "size_note": "",
                 "capacity": "160席",
+                "capacity_note": "",
                 "rec_row": "E列-F列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [
+                    "4DX"
+                ],
+                "special_seats": []
             },
             "C0001-05": {
                 "name": "シアター5 (BESTIA)",
                 "note": "BESTIA / Dolby Atmos",
                 "size": "15.6m × 6.5m",
+                "size_note": "",
                 "capacity": "346席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
-                    "Dolby Atmos"
+                    "Dolby Atmos",
+                    "BESTIA"
+                ],
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "グランドクラス",
+                        "note": "＋3,000円 / 電動リクライニング・ボトルクーラー・USB付"
+                    },
+                    {
+                        "row": "L列",
+                        "name": "プレミアムクラス",
+                        "note": "＋1,500円 / リクライニング・サイドテーブル付"
+                    },
+                    {
+                        "row": "A列",
+                        "name": "フラットシート",
+                        "note": "最前列 / 寝そべり型シート(通常料金)"
+                    }
                 ]
             },
             "C0001-06": {
                 "name": "シアター6 (BESTIA)",
                 "note": "BESTIA / DTS:X",
                 "size": "12.7m × 6.3m",
+                "size_note": "",
                 "capacity": "235席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [
+                    "BESTIA"
+                ],
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "グランドクラス",
+                        "note": "＋3,000円 / 電動リクライニング・ボトルクーラー・USB付"
+                    },
+                    {
+                        "row": "L列",
+                        "name": "プレミアムクラス",
+                        "note": "＋1,500円 / リクライニング・サイドテーブル付"
+                    },
+                    {
+                        "row": "A列",
+                        "name": "フラットシート",
+                        "note": "最前列 / 寝そべり型シート(通常料金)"
+                    }
+                ]
             },
             "C0001-07": {
                 "name": "シアター7",
                 "note": "通常",
                 "size": "7.1m × 3.8m",
+                "size_note": "",
                 "capacity": "79席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-08": {
                 "name": "シアター8",
                 "note": "通常",
                 "size": "7.1m × 3.8m",
+                "size_note": "",
                 "capacity": "79席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-09": {
                 "name": "シアター9",
                 "note": "通常",
                 "size": "9.3m × 5.0m",
+                "size_note": "",
                 "capacity": "103席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-10": {
                 "name": "シアター10",
                 "note": "通常",
                 "size": "10.5m × 5.6m",
+                "size_note": "",
                 "capacity": "152席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-11": {
                 "name": "シアター11",
                 "note": "通常",
                 "size": "10.4m × 5.6m",
+                "size_note": "",
                 "capacity": "145席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0001-12": {
                 "name": "シアター12 (IMAXレーザーGT)",
                 "note": "IMAX Laser GT",
                 "size": "25.8m × 18.9m",
+                "size_note": "",
                 "capacity": "542席",
+                "capacity_note": "",
                 "rec_row": "H列-J列",
+                "rec_row_note": "",
                 "rec_num": "20-21番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "IMAX"
+                ],
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "グランドクラス",
+                        "note": "＋3,000円 / 電動リクライニング・ボトルクーラー・USB付"
+                    },
+                    {
+                        "row": "L列",
+                        "name": "プレミアムクラス",
+                        "note": "＋1,500円 / リクライニング・サイドテーブル付"
+                    },
+                    {
+                        "row": "A列",
+                        "name": "フラットシート",
+                        "note": "最前列 / 寝そべり型シート(通常料金)"
+                    }
                 ]
             }
         }
@@ -124,96 +260,192 @@ const CINEMA_DB = {
                 "name": "スクリーン1",
                 "note": "通常",
                 "size": "8.3m × 3.5m",
+                "size_note": "",
                 "capacity": "119席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0002-02": {
                 "name": "スクリーン2 (轟音)",
                 "note": "轟音シアター",
                 "size": "9.9m × 4.1m",
+                "size_note": "",
                 "capacity": "141席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [
+                    "轟音"
+                ],
+                "special_seats": []
             },
             "C0002-03": {
                 "name": "スクリーン3",
                 "note": "通常",
                 "size": "11.6m × 4.9m",
+                "size_note": "",
                 "capacity": "199席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
+                ]
             },
             "C0002-04": {
                 "name": "スクリーン4",
                 "note": "通常",
                 "size": "9.9m × 4.1m",
+                "size_note": "",
                 "capacity": "119席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0002-05": {
                 "name": "スクリーン5",
                 "note": "通常",
                 "size": "9.9m × 4.1m",
+                "size_note": "",
                 "capacity": "119席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0002-06": {
                 "name": "スクリーン6 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "14.4m × 6.0m",
+                "size_note": "",
                 "capacity": "313席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
+                ],
+                "special_seats": [
+                    {
+                        "row": "K列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
                 ]
             },
             "C0002-07": {
                 "name": "スクリーン7",
                 "note": "通常",
                 "size": "11.6m × 4.9m",
+                "size_note": "",
                 "capacity": "199席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": [
+                    {
+                        "row": "J列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
+                ]
             },
             "C0002-08": {
                 "name": "スクリーン8",
                 "note": "通常",
                 "size": "9.9m × 4.1m",
+                "size_note": "",
                 "capacity": "119席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0002-09": {
                 "name": "スクリーン9",
                 "note": "通常",
                 "size": "9.9m × 4.1m",
+                "size_note": "",
                 "capacity": "119席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0002-10": {
                 "name": "スクリーン10 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "14.4m × 6.0m",
+                "size_note": "",
                 "capacity": "313席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
+                ],
+                "special_seats": [
+                    {
+                        "row": "L列",
+                        "name": "プレミアボックスシート",
+                        "note": "＋1,000円 / セミプライベート空間・荷物置き場"
+                    }
                 ]
             }
         }
@@ -225,91 +457,172 @@ const CINEMA_DB = {
                 "name": "スクリーン1 (プラチナ)",
                 "note": "プラチナシートあり",
                 "size": "17.2m × 7.2m",
+                "size_note": "",
                 "capacity": "580席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": [
+                    {
+                        "row": "M列",
+                        "name": "プラチナシート",
+                        "note": "＋5,000円 / 2階バルコニー席・ラウンジ利用・ウェルカムドリンク"
+                    },
+                    {
+                        "row": "N列",
+                        "name": "プラチナルーム",
+                        "note": "＋30,000円(2名) / 完全個室・専用スピーカー・ラウンジ利用"
+                    }
+                ]
             },
             "C0003-02": {
                 "name": "スクリーン2",
                 "note": "通常",
                 "size": "13.0m × 5.5m",
+                "size_note": "",
                 "capacity": "301席",
+                "capacity_note": "",
                 "rec_row": "I列-J列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-03": {
                 "name": "スクリーン3",
                 "note": "通常",
                 "size": "12.8m × 5.3m",
+                "size_note": "",
                 "capacity": "287席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-04": {
                 "name": "スクリーン4",
                 "note": "通常",
                 "size": "8.4m × 4.6m",
+                "size_note": "",
                 "capacity": "127席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-05": {
                 "name": "スクリーン5",
                 "note": "通常",
                 "size": "9.0m × 4.8m",
+                "size_note": "",
                 "capacity": "157席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-06": {
                 "name": "スクリーン6",
                 "note": "通常",
                 "size": "10.8m × 4.5m",
+                "size_note": "",
                 "capacity": "232席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-07": {
                 "name": "スクリーン7",
                 "note": "通常",
                 "size": "7.9m × 3.3m",
+                "size_note": "",
                 "capacity": "115席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-08": {
                 "name": "スクリーン8",
                 "note": "通常",
                 "size": "8.9m × 3.7m",
+                "size_note": "",
                 "capacity": "157席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-09": {
                 "name": "スクリーン9",
                 "note": "通常",
                 "size": "8.0m × 3.3m",
+                "size_note": "",
                 "capacity": "127席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0003-10": {
                 "name": "スクリーン10",
                 "note": "通常",
                 "size": "7.9m × 3.3m",
+                "size_note": "",
                 "capacity": "115席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -320,82 +633,145 @@ const CINEMA_DB = {
                 "name": "シアター1",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "226席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-02": {
                 "name": "シアター2",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "135席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-03": {
                 "name": "シアター3",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "135席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-04": {
                 "name": "シアター4",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "76席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-05": {
                 "name": "シアター5",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "112席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-06": {
                 "name": "シアター6 (Dolby Cinema)",
                 "note": "Dolby Cinema",
                 "size": "15.0m × 7.13m",
+                "size_note": "",
                 "capacity": "252席",
+                "capacity_note": "",
                 "rec_row": "H列-J列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-07": {
                 "name": "シアター7",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "76席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-08": {
                 "name": "シアター8",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "112席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "C0004-09": {
                 "name": "シアター9",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "429席",
+                "capacity_note": "",
                 "rec_row": "J列-L列",
+                "rec_row_note": "",
                 "rec_num": "16-17番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -406,114 +782,198 @@ const CINEMA_DB = {
                 "name": "スクリーン1",
                 "note": "通常",
                 "size": "7.6m × 3.2m",
+                "size_note": "",
                 "capacity": "122席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen2_mx4d": {
                 "name": "スクリーン2 (MX4D)",
                 "note": "MX4D",
                 "size": "12.6m × 5.3m",
+                "size_note": "",
                 "capacity": "108席",
+                "capacity_note": "",
                 "rec_row": "E列-F列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen3": {
                 "name": "スクリーン3",
                 "note": "通常",
                 "size": "10.8m × 4.5m",
+                "size_note": "",
                 "capacity": "128席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen4": {
                 "name": "スクリーン4",
                 "note": "通常",
                 "size": "12.4m × 5.2m",
+                "size_note": "",
                 "capacity": "184席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen5": {
                 "name": "スクリーン5",
                 "note": "通常",
                 "size": "9.6m × 4.0m",
+                "size_note": "",
                 "capacity": "184席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen6": {
                 "name": "スクリーン6",
                 "note": "通常",
                 "size": "11.0m × 4.6m",
+                "size_note": "",
                 "capacity": "106席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen7": {
                 "name": "スクリーン7",
                 "note": "通常",
                 "size": "17.6m × 7.3m",
+                "size_note": "",
                 "capacity": "407席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen8": {
                 "name": "スクリーン8",
                 "note": "通常",
                 "size": "7.6m × 3.2m",
+                "size_note": "",
                 "capacity": "122席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen9_tcx": {
                 "name": "スクリーン9 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "19.0m × 8.0m",
+                "size_note": "",
                 "capacity": "499席",
+                "capacity_note": "",
                 "rec_row": "H列-J列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen10_imax": {
                 "name": "スクリーン10 (IMAX)",
                 "note": "IMAX Laser",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "311席",
+                "capacity_note": "",
                 "rec_row": "F列-H列",
+                "rec_row_note": "",
                 "rec_num": "17-18番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "IMAX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen11": {
                 "name": "スクリーン11",
                 "note": "通常",
                 "size": "9.5m × 3.9m",
+                "size_note": "",
                 "capacity": "122席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen12": {
                 "name": "スクリーン12",
                 "note": "通常",
                 "size": "6.6m × 2.8m",
+                "size_note": "",
                 "capacity": "73席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -524,77 +984,133 @@ const CINEMA_DB = {
                 "name": "シアター1",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "63席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater2": {
                 "name": "シアター2",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "63席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater3_atmos": {
                 "name": "シアター3 (Dolby Atmos)",
                 "note": "Dolby Atmos / 35mm映写機",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "343席",
+                "capacity_note": "",
                 "rec_row": "F列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos"
-                ]
+                ],
+                "special_seats": []
             },
             "theater4": {
                 "name": "シアター4",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "50席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater5": {
                 "name": "シアター5",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "63席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater6_screenx": {
                 "name": "シアター6 (ScreenX)",
                 "note": "ScreenX",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "126席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "ScreenX"
-                ]
+                ],
+                "special_seats": []
             },
             "theater7": {
                 "name": "シアター7",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "113席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater8": {
                 "name": "シアター8",
                 "note": "全席プレミアム",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "63席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -605,71 +1121,120 @@ const CINEMA_DB = {
                 "name": "スクリーン1 (TCX)",
                 "note": "TCX / Custom Speaker",
                 "size": "19.8m × 8.3m",
+                "size_note": "",
                 "capacity": "456席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "16-17番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "TCX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen2": {
                 "name": "スクリーン2",
                 "note": "通常",
                 "size": "10.0m × 4.2m",
+                "size_note": "",
                 "capacity": "98席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen4_imax": {
                 "name": "スクリーン4 (IMAX)",
                 "note": "IMAX Laser",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "339席",
+                "capacity_note": "",
                 "rec_row": "H列-J列",
+                "rec_row_note": "",
                 "rec_num": "16-17番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "IMAX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen5_tcx": {
                 "name": "スクリーン5 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "15.0m × 6.2m",
+                "size_note": "",
                 "capacity": "395席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen9": {
                 "name": "スクリーン9",
                 "note": "通常",
                 "size": "12.7m × 5.3m",
+                "size_note": "",
                 "capacity": "257席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen10": {
                 "name": "スクリーン10",
                 "note": "通常",
                 "size": "9.6m × 4.0m",
+                "size_note": "",
                 "capacity": "98席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "screen13": {
                 "name": "スクリーン13",
                 "note": "別館(宝塚ビル地下)",
                 "size": "10.0m × 4.2m",
+                "size_note": "",
                 "capacity": "106席",
+                "capacity_note": "",
                 "rec_row": "G列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -680,28 +1245,49 @@ const CINEMA_DB = {
                 "name": "ピカデリー1",
                 "note": "通常(大スクリーン)",
                 "size": "15.6m × 6.53m",
+                "size_note": "",
                 "capacity": "623席",
+                "capacity_note": "",
                 "rec_row": "M列-O列",
+                "rec_row_note": "",
                 "rec_num": "20-21番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "piccadilly2": {
                 "name": "ピカデリー2",
                 "note": "通常(大スクリーン)",
                 "size": "16.0m × 6.7m",
+                "size_note": "",
                 "capacity": "434席",
+                "capacity_note": "",
                 "rec_row": "M列-O列",
+                "rec_row_note": "",
                 "rec_num": "18-19番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "dolby_cinema": {
                 "name": "ドルビーシネマ",
                 "note": "Dolby Cinema",
                 "size": "15.0m × 7.13m",
+                "size_note": "",
                 "capacity": "255席",
+                "capacity_note": "",
                 "rec_row": "M列",
+                "rec_row_note": " 最後列",
                 "rec_num": "12-13番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -712,22 +1298,36 @@ const CINEMA_DB = {
                 "name": "スクリーン7 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "20.2m × 8.4m",
+                "size_note": "",
                 "capacity": "521席",
+                "capacity_note": "",
                 "rec_row": "F列",
+                "rec_row_note": "",
                 "rec_num": "24-25番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
-                ]
+                ],
+                "special_seats": []
             },
             "screen8_mx4d": {
                 "name": "スクリーン8 (MX4D)",
                 "note": "MX4D",
                 "size": "9.7m × 5.2m",
+                "size_note": "",
                 "capacity": "102席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -738,19 +1338,35 @@ const CINEMA_DB = {
                 "name": "スクリーン7 (4DX)",
                 "note": "4DX",
                 "size": "11.4m × 4.8m",
+                "size_note": "",
                 "capacity": "120席",
+                "capacity_note": "",
                 "rec_row": "E列-F列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [
+                    "4DX"
+                ],
+                "special_seats": []
             },
             "screen10_ocean": {
                 "name": "スクリーン10 (OCEAN)",
                 "note": "オーシャンスクリーン",
                 "size": "22.6m × 9.3m",
+                "size_note": "",
                 "capacity": "391席",
+                "capacity_note": "",
                 "rec_row": "I列-J列",
+                "rec_row_note": "",
                 "rec_num": "18-19番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -761,39 +1377,67 @@ const CINEMA_DB = {
                 "name": "シアター3",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "202席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater6": {
                 "name": "シアター6",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "85席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater9": {
                 "name": "シアター9",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "147席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater10_imax": {
                 "name": "シアター10 (IMAX)",
                 "note": "IMAX Laser",
                 "size": "19.08m × 10.0m",
+                "size_note": "",
                 "capacity": "224席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "IMAX"
-                ]
+                ],
+                "special_seats": []
             }
         }
     },
@@ -804,21 +1448,35 @@ const CINEMA_DB = {
                 "name": "シアター10",
                 "note": "通常",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "144席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "theater11_imax": {
                 "name": "シアター11 (IMAX)",
                 "note": "IMAX",
                 "size": "22.0m × 12.0m",
+                "size_note": "",
                 "capacity": "275席",
+                "capacity_note": "",
                 "rec_row": "H列-J列",
+                "rec_row_note": "",
                 "rec_num": "14-15番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "IMAX"
-                ]
+                ],
+                "special_seats": []
             }
         }
     },
@@ -829,13 +1487,20 @@ const CINEMA_DB = {
                 "name": "スクリーン8 (TCX)",
                 "note": "TCX / Dolby Atmos",
                 "size": "16.0m × 6.7m",
+                "size_note": "",
                 "capacity": "290席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "12-13番",
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
                 "tags": [
                     "Dolby Atmos",
                     "TCX"
-                ]
+                ],
+                "special_seats": []
             }
         }
     },
@@ -846,10 +1511,17 @@ const CINEMA_DB = {
                 "name": "シアター1 (Odessa)",
                 "note": "Odessa音響システム",
                 "size": "7.7m × 3.3m",
+                "size_note": "",
                 "capacity": "200席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -860,19 +1532,33 @@ const CINEMA_DB = {
                 "name": "シネマ・ロサ1",
                 "note": "",
                 "size": "6.5m × 2.75m",
+                "size_note": "",
                 "capacity": "200席",
+                "capacity_note": "",
                 "rec_row": "H列-I列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "rosa2": {
                 "name": "シネマ・ロサ2",
                 "note": "インディーズ聖地",
                 "size": "6.4m × 2.7m",
+                "size_note": "",
                 "capacity": "177席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -883,19 +1569,33 @@ const CINEMA_DB = {
                 "name": "シネマ1",
                 "note": "",
                 "size": "8.3m × 4.5m",
+                "size_note": "",
                 "capacity": "187席",
+                "capacity_note": "",
                 "rec_row": "E列-F列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "cinema2": {
                 "name": "シネマ2",
                 "note": "",
                 "size": "7.6m × 3.4m",
+                "size_note": "",
                 "capacity": "93席",
+                "capacity_note": "",
                 "rec_row": "E列-F列",
+                "rec_row_note": "",
                 "rec_num": "7-8番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -906,10 +1606,17 @@ const CINEMA_DB = {
                 "name": "オデヲン",
                 "note": "",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "224席",
+                "capacity_note": "",
                 "rec_row": "G列-H列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     },
@@ -920,100 +1627,177 @@ const CINEMA_DB = {
                 "name": "aスタジオ (極音)",
                 "note": "シネマ・ツー / 極上音響",
                 "size": "10.46m × 4.42m",
+                "size_note": "",
                 "capacity": "382席",
+                "capacity_note": "",
                 "rec_row": "D列-F列",
+                "rec_row_note": "",
                 "rec_num": "11-12番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_b": {
                 "name": "bスタジオ (極音)",
                 "note": "シネマ・ツー / 極上音響",
                 "size": "10.76m × 4.58m",
+                "size_note": "",
                 "capacity": "303席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "8-9番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_c": {
                 "name": "cスタジオ (極音)",
                 "note": "シネマ・ツー / 極上音響",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "180席",
+                "capacity_note": "",
                 "rec_row": "F列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_d": {
                 "name": "dスタジオ",
                 "note": "シネマ・ツー",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "98席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_e": {
                 "name": "eスタジオ",
                 "note": "シネマ・ツー",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "98席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_f": {
                 "name": "fスタジオ (極爆)",
                 "note": "シネマ・ワン / 極上爆音",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "226席",
+                "capacity_note": "",
                 "rec_row": "E列-G列",
+                "rec_row_note": "",
                 "rec_num": "10-11番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_g": {
                 "name": "gスタジオ",
                 "note": "シネマ・ワン",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "259席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_h": {
                 "name": "hスタジオ",
                 "note": "シネマ・ワン",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "259席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_i": {
                 "name": "iスタジオ",
                 "note": "シネマ・ワン",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "178席",
+                "capacity_note": "",
                 "rec_row": "D列-E列",
+                "rec_row_note": "",
                 "rec_num": "6-7番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_j": {
                 "name": "jスタジオ",
                 "note": "シネマ・ワン",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "78席",
+                "capacity_note": "",
                 "rec_row": "B列-C列",
+                "rec_row_note": "",
                 "rec_num": "5-6番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             },
             "studio_k": {
                 "name": "kスタジオ",
                 "note": "シネマ・ワン",
                 "size": "[n/a]",
+                "size_note": "",
                 "capacity": "78席",
+                "capacity_note": "",
                 "rec_row": "B列-C列",
+                "rec_row_note": "",
                 "rec_num": "5-6番",
-                "tags": []
+                "rec_num_note": "",
+                "master_rec": "",
+                "master_rec_note": "",
+                "tags": [],
+                "special_seats": []
             }
         }
     }
