@@ -49,10 +49,12 @@ def main():
                 screen_id = row[4]
                 screen_name = row[5]
                 
-                # Dedup based on ScreenID
-                if screen_id in seen_screens:
+                # Dedup based on composite key (TheaterID + ScreenID)
+                # to prevent collisions between theaters using generic IDs like 'screen1'
+                composite_key = f"{theater_id}_{screen_id}"
+                if composite_key in seen_screens:
                     continue
-                seen_screens.add(screen_id)
+                seen_screens.add(composite_key)
                 
                 if theater_id not in db:
                     db[theater_id] = {
